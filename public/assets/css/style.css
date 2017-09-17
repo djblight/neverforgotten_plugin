@@ -11,6 +11,15 @@ a:hover {
   cursor: pointer;
 }
 
+.tt-dataset-city {
+  background: white;
+}
+.tt-dropdown-menu {
+  background: white;
+  border:  solid black 1px;
+  width: 100%;
+  line-height: 80%;
+}
 h2 {
   font-weight: 400;
 }

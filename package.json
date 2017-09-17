@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "express-validator": "^4.1.1",
     "moment": "^2.18.1",
     "mysql2": "^1.4.2",
+    "ejs": "~1.0.0",
     "passport": "^0.4.0",
     "passport-http": "^0.3.0",
     "passport-local": "^1.0.0",

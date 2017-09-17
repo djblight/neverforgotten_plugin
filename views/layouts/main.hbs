@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script defer src="/assets/js/typeahead.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('input.typeahead').typeahead({
+          name: 'city',
+          remote: '/search?key=%QUERY',
+          limit: 10
+      });
+    });
+</script>
   <script
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -16,7 +27,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.js"></script>
   <script defer src="/assets/js/light.js"></script>
   <script defer src="/assets/js/fontawesome.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  
+  </script>
   <title>Login</title>
 </head>
 <body>

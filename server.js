@@ -63,9 +63,10 @@ app.use((req, res, next) => {
   next();
 });
 
+
 app.use('/', routes);
 app.use('/users', users);
-app.use('/post', posts);
+app.use('/post', posts)
 
 const PORT = process.env.PORT || 3000;
 db.sequelize.sync().then(() => {
